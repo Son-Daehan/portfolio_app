@@ -1,0 +1,11 @@
+@educations.map do |education|
+  {
+    id: education.id,
+    title: education.title,
+    school: education.school,
+    user_name: education.user.name,
+    date_beginning: education.date_beginning,
+    date_end: education.date_end,
+    description: education.description
+  }
+end

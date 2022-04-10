@@ -1,0 +1,9 @@
+{
+  id: @experience.id,
+  employer: @experience.employer,
+  title: @experience.title,
+  user_name: @experience.user.name,
+  date_beginning: @experience.date_beginning,
+  date_end: @experience.date_end,
+  description: @experience.description
+}
