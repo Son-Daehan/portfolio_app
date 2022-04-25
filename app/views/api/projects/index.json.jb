@@ -3,6 +3,7 @@
     id: project.id,
     title: project.title,
     author: project.user.name,
-    image_url: project.image_url
+    image_url: project.image_url,
+    github_url: project.github_url
   }
 end

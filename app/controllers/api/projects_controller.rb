@@ -14,7 +14,8 @@ class Api::ProjectsController < ApplicationController
     @project = Project.new(
       title: params[:title],
       user_id: params[:user_id],
-      image_url: params[:image_url]
+      image_url: params[:image_url],
+      github_url: params[:github_url]
       )
     if @project.save
       render 'show.json.jb'
@@ -29,6 +30,7 @@ class Api::ProjectsController < ApplicationController
     @project.title = params[:title] || @project.title
     @project.user_id = params[:user_id] || @project.user_id
     @project.image_url = params[:image_url] || @project.image_url
+    @project.github_url = params[:github_url] || @project.github_url
 
     if @project.save
       render 'show.json.jb'
