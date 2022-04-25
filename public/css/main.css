@@ -645,7 +645,7 @@ button:focus {
   font-size: .8em;
 }
 
-#skillTitle {
+.skillTitle {
   text-align: center;
 }
 
